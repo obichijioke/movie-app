@@ -3,6 +3,7 @@ import WithMenu from '../layout/WithMenu'
 import FeaturedArea from '../home/FeaturedArea';
 import { Box, Container } from '@mui/material';
 import ContinueWatching from '../home/continue-watching/ContinueWatching';
+import SeriesList from '../series/SeriesList';
 
 const Home = () => {
   const [bg, setBg] = useState(null)
@@ -14,6 +15,7 @@ const Home = () => {
           <Container maxWidth="xl">
             <FeaturedArea setBg={setBg}/>
             <ContinueWatching/>
+            <SeriesList/>
           </Container>
         </Box>
       </div>
