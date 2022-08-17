@@ -43,7 +43,7 @@ const SeriesList = () => {
   };
 
   return (
-    <Box sx={{width:'100%', mt: 6}}>
+    <Box sx={{width:'100%', my: 6}}>
         <Box sx={{display: 'flex', justifyContent: 'space-between', mb:3}}>
             <Typography variant='h5'>Continue watching</Typography>
             <Box sx={{display: 'flex', alignItems: 'center'}}>
@@ -51,8 +51,7 @@ const SeriesList = () => {
                 <ArrowRightAltIcon/>
             </Box>
         </Box>
-        {/* <Box sx={{display: 'flex', justifyContent: ''}}> */}
-            <Slider {...settings}>
+        <Box sx={{display: 'flex', justifyContent: ''}}>
               <Box sx={{mx:1}}><SeriesCard/></Box>
               <Box sx={{mx:1}}><SeriesCard/></Box>
               <Box sx={{mx:1}}><SeriesCard/></Box>
@@ -62,12 +61,8 @@ const SeriesList = () => {
               <Box sx={{mx:1}}><SeriesCard/></Box>
               <Box sx={{mx:1}}><SeriesCard/></Box>
               <Box sx={{mx:1}}><SeriesCard/></Box>
-              <Box sx={{mx:1}}><SeriesCard/></Box>
-              <Box sx={{mx:1}}><SeriesCard/></Box>
-              <Box sx={{mx:1}}><SeriesCard/></Box>
-              <Box sx={{mx:1}}><SeriesCard/></Box>
-            </Slider>
-        {/* </Box> */}
+            
+        </Box>
     </Box>
   )
 }
