@@ -51,18 +51,21 @@ const SeriesList = () => {
                 <ArrowRightAltIcon/>
             </Box>
         </Box>
-        <Box sx={{display: 'flex', justifyContent: ''}}>
-              <Box sx={{mx:1}}><SeriesCard/></Box>
-              <Box sx={{mx:1}}><SeriesCard/></Box>
-              <Box sx={{mx:1}}><SeriesCard/></Box>
-              <Box sx={{mx:1}}><SeriesCard/></Box>
-              <Box sx={{mx:1}}><SeriesCard/></Box>
-              <Box sx={{mx:1}}><SeriesCard/></Box>
-              <Box sx={{mx:1}}><SeriesCard/></Box>
-              <Box sx={{mx:1}}><SeriesCard/></Box>
-              <Box sx={{mx:1}}><SeriesCard/></Box>
-            
+        <Box sx={{width:'100%',}}>
+          <Slider {...settings}>
+                <Box sx={{mx:1}}><SeriesCard/></Box>
+                <Box sx={{mx:1}}><SeriesCard/></Box>
+                <Box sx={{mx:1}}><SeriesCard/></Box>
+                <Box sx={{mx:1}}><SeriesCard/></Box>
+                <Box sx={{mx:1}}><SeriesCard/></Box>
+                <Box sx={{mx:1}}><SeriesCard/></Box>
+                <Box sx={{mx:1}}><SeriesCard/></Box>
+                <Box sx={{mx:1}}><SeriesCard/></Box>
+                <Box sx={{mx:1}}><SeriesCard/></Box>
+          </Slider>  
         </Box>
+             
+      
     </Box>
   )
 }
